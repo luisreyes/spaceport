@@ -1,0 +1,21 @@
+<template name="SpacePortLayout">
+
+    <header class="sp-admin">
+        <div class="ui fixed inverted main menu">
+            <a class="item" href="{{pathFor 'AdminHome'}}"><i style="margin:0;" class="desktop icon"></i></a>
+            <a class="item" href="{{pathFor 'AdminPosts'}}">Posts</a>
+            <a class="item" href="{{pathFor 'AdminPages'}}">Pages</a>
+            <div class="right menu">
+                <a class="item" href="{{pathFor 'home'}}" target="_blank">View Site</a>
+                <a class="item" href="{{pathFor 'AdminSettings'}}"><i class="setting icon"></i></a>
+                <a class="item">Sign-out</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="sp-admin-layout sp-main">
+        {{>yield}}
+    </section>
+
+</template>

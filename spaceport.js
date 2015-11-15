@@ -1,1 +1,2 @@
-// Write your package code here!
+Meteor.subscribe('_spaceport');
+console.log('Package Loaded', _SpacePort.findOne());
